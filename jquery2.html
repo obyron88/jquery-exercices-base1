@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="style.css"/>
+    <title>Jquery Exercice 2</title>
+  </head>
+  <body>
+    <audio preload="auto" src="./Tush - ZZ Top.mp3" id="schubert">
+    </audio>
+    <audio preload="auto" src="./Left Lane Cruiser - Juice To Get Loose.mp3" id="talking">
+    </audio>
+
+    Entrez votre nom : <input type="text" id="nom" name="nom" value=""/><br/>
+    Entrez votre age : <input type="text" id="age" name="age" value=""/><br/>
+    <input type="submit" onclick="call();" name="valider" value="OK"/>
+
+    <p id="op"></p>
+
+    <script src="jquery.js">
+
+    </script>
+    <script>
+
+      $("#nom").click(function(){
+          $("#texte").hide();
+      });
+      $("#age").click(function(){
+          $("#texte").show();
+      });
+
+
+    </script>
+  </body>
+</html>
